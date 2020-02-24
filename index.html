@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://www.moneybutton.com/moneybutton.js"></script>
+    <script>
+        function myCustomCallback (payment) {
+          console.log('A payment has occurred!', payment)
+        }
+    </script>
+      
+      <div class="money-button"
+        data-to="18531@moneybutton.com"
+        data-amount="0.00011813"
+        data-currency="BSV"
+        data-on-payment="myCustomCallback"
+      ></div>
+</body>
+</html>
